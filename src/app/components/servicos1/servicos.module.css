@@ -1,0 +1,60 @@
+.services1 {
+  background-image: url('../../../../public/servicos1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  background: linear-gradient(to right, #906604, #f0d272);
+  background-clip: text;
+  text-shadow: 0 0 10px #dbc06866, 0 0 20px #dbc06853, 0 0 10px #dbc06872, 0 0 80px #dbc06877, 0 0 50px #dbc06851;
+  color: transparent;
+  -webkit-background-clip: text;
+  /* Para suporte em Safari */
+}
+
+.cardcustom {
+  height: 300px;
+  /* Define a altura do card */
+  display: flex;
+  /* Permite que o conteúdo seja centralizado verticalmente */
+  flex-direction: column;
+  /* Organiza o conteúdo em coluna */
+  justify-content: space-between;
+  /* Espaça o conteúdo para ocupar a altura total */
+}
+
+.containerButtonServ1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonService1 {
+  padding: 10px;
+  cursor: pointer;
+  background: linear-gradient(to right, green, rgb(229, 153, 0));
+  color: white;
+  width: 200px;
+  margin-top: -40px;
+  /* transition: background 0.3s ease-in-out; */
+  animation: almentar 1s linear forwards;
+}
+@keyframes almentar {
+
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 120%;
+    background-color: blue;
+  }
+  
+}
+
+.buttonService1:hover {
+  background: red;
+  font-weight: 600;
+  color: white;
+}
