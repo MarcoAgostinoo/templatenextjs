@@ -1,44 +1,49 @@
 import Servicos1 from "@/app/components/servicos1/servicos";
 import styles from "./mainhome.module.css";
 import Link from "next/link";
+import Image from 'next/image'; // Importando o componente Image
+
 export default function MainHome() {
     return (
         <div>
             <div className={styles.headertop}>
                 <div id="carouselExampleCaptions" className="carousel slide">
                     <header className={styles.teste}>
-                        <Link href="/"> <img src="/logo.jpg" alt="logo" height={100} width={100} style={{ height: '100px', width: 'auto' }} />
+                        <Link href="/">
+                            <Image src="/logo.jpg" alt="logo" height={100} width={100} style={{ height: '100px', width: 'auto' }} />
                         </Link>
-                        <nav class="navbar navbar-expand-lg header">
-                            <div class="container-fluid">
-                                <a class="navbar-brand text-white" href="#">Navbar</a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
+                        <nav className="navbar navbar-expand-lg header">
+                            <div className="container-fluid">
+                                <a className="navbar-brand text-white" href="#">Navbar</a>
+                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarNavDropdown" >
-                                    <ul class="navbar-nav navbarHeader">
-                                        <li class="nav-item">
-                                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                                <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul className="navbar-nav navbarHeader">
+                                        <li className="nav-item">
+                                            <a className="nav-link text-white" aria-current="page" href="#">Home</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-white"  href="#">Features</a>
+                                        <li className="nav-item">
+                                            <a className="nav-link text-white" href="#">Features</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-white" href="#">Pricing</a>
+                                        <li className="nav-item">
+                                            <a className="nav-link text-white" href="#">Pricing</a>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <li className="nav-item dropdown">
+                                            <a className="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Dropdown link
                                             </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <ul className="dropdown-menu">
+                                                <li><a className="dropdown-item" href="#">Action</a></li>
+                                                <li><a className="dropdown-item" href="#">Another action</a></li>
+                                                <li><a className="dropdown-item" href="#">Something else here</a></li>
                                             </ul>
                                         </li>
-                                        <li><a>
-                                        <button type="button" class="btn btn-success">Success</button>
-                                            </a></li>
+                                        <li>
+                                            <a>
+                                                <button type="button" className="btn btn-success">Success</button>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,21 +56,21 @@ export default function MainHome() {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="banner1.jpg" className="d-block w-100" alt="..." />
+                            <Image src="/banner1.jpg" className="d-block w-100" alt="..." width={800} height={400} />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="banner01.jpg" className="d-block w-100" alt="..." />
+                            <Image src="/banner01.jpg" className="d-block w-100" alt="..." width={800} height={400} />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="banner2.jpg" className="d-block w-100" alt="..." />
+                            <Image src="/banner2.jpg" className="d-block w-100" alt="..." width={800} height={400} />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -83,6 +88,6 @@ export default function MainHome() {
                 </div>
             </div>
             <Servicos1 />
-        </div >
+        </div>
     );
 }

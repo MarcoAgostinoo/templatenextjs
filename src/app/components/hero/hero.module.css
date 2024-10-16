@@ -21,3 +21,11 @@
     width: 100;
     font-size: 50px;
 }
+
+.cols3 {
+    position: relative; /* Define o contêiner como relativo */
+}
+
+.customFontSize {
+    font-size: 84px; /* Ajuste conforme necessário */
+}

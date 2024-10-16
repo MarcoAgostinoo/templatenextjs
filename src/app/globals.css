@@ -5,7 +5,6 @@
 /* Remove a margem e o padding de todos os elementos */
 * {
     margin: 0;
-    width: 100%;
     padding: 0;
     box-sizing: border-box;
     /* Facilita o controle do tamanho dos elementos */
